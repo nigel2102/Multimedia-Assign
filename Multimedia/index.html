@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--responsive command-->
+    <title>The Food Specialist</title>
+
+    <!--Linking CSS Style-->
+    <link rel="stylesheet" href="./CSS/Style.css" />
+
+    <!--ink for Fontawesome icons-->
+    <link rel="stylesheet" href="./CSS/all.css" />
+  </head>
+
+  <body>
+    <!--Header Navigation items-->
+
+    <nav class="nav">
+      <div class="nav-menu flex-row">
+        <div class="nav-brand">
+          <img width="150" height="85" src="/burger.svg" alt="Burger Icon" />
+        </div>
+
+        <div class="toggle-collapse">
+          <!--Adding Collapse Menu-->
+          <div class="toggle-icons">
+            <i class="fas fa-bars"></i>
+          </div>
+        </div>
+
+        <div>
+          <ul class="nav-items">
+            <!--Adding Menu Items-->
+            <li class="nav-link">
+              <a href="#">Menu</a>
+            </li>
+            <li class="nav-link">
+              <a href="#">Order</a>
+            </li>
+            <li class="nav-link">
+              <a href="#">Recipes</a>
+            </li>
+            <li class="nav-link">
+              <a href="#">Reviews</a>
+            </li>
+          </ul>
+        </div>
+        <div class="social text-gray">
+          <!--Adding Social Media icons-->
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+    </nav>
+
+    <!--Website Body-->
+
+    <main>
+      <section>
+        <div class="site-title">
+          <div class="site-background">
+            <h3>Food & Recipes</h3>
+            <h1>Discover Different Varieties of Food</h1>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>New Dishes</h2>
+        <div class="blog-post">
+          <div class="blog-content">
+            <img src="./FOOD/burger1.jpg" alt="burger" />
+            <div class="blog-title">
+              <h3>Grilled Chicken Burger</h3>
+              <button class="btn btn-blog">See Recipe</button>
+            </div>
+          </div>
+          <div class="blog-content">
+            <img src="./FOOD/pasta1.jpg" alt="pasta" />
+            <div class="blog-title">
+              <h3>Alfredo Mushroom Spaghetti</h3>
+              <button class="btn btn-blog">See Recipe</button>
+            </div>
+          </div>
+          <div class="blog-content">
+            <img src="./FOOD/cake1.jpg" alt="cake" />
+            <div class="blog-title">
+              <h3>Banana Chocolate Bread Cake</h3>
+              <button class="btn btn-blog">See Recipe</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Dish of the Week</h2>
+        <div class="paragraph">
+          <div class="featured">
+            <img src="./FOOD/tiramisu1.jpg" alt="Tiramisu1" />
+            <img src="./FOOD/tiramisu2.jpg" alt="Tiramisu2" />
+            <div class="paragraph-summary">
+              <p>
+                The word Tiramisù literally means “pick me up”. It comes from
+                the Treviso dialect, “Tireme su”, Italianised into Tiramisù in
+                the latter half of the 20th century. Historical records state
+                that Tiramisù originated in Treviso in 1800. It is said that
+                this dessert was invented by a clever “maitresse” of a house of
+                pleasure in the centre of Treviso.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Previously Featured Items</h2>
+        <div class="gallery">
+          <img width="auto" height="auto" src="./FOOD/pizza1.jpg" alt="Pizza bacon and egg" />
+          <img width="auto" height="auto" src="./FOOD/potato1.jpg" alt="Grilled potato and bacon" />
+          <img width="auto" height="auto" src="./FOOD/salad1.jpg" alt="salad" />
+          <img width="auto" height="auto" src="./FOOd/brownie1.jpg" alt="Brownie" />
+          <img width="auto" height="auto" src="./FOOd/lemon.jpg" alt="Lemon Cake" />
+          <img width="auto" height="auto" src="./FOOd/mussli.jpg" alt="Hummus" />
+          <img width="auto" height="auto" src="./FOOd/pizza2.jpg" alt="Pizza with salad" />
+          <img width="auto" height="auto" src="./FOOd/sushi.jpg" alt="Sushi" />
+        </div>
+      </section>
+    </main>
+
+    <!--Contact information-->
+
+    <section>
+      <h2>Contact Us</h2>
+      <div class="contact-container">
+        <label for="fname">First Name</label>
+        <input
+          type="text"
+          id="fname"
+          name="firstname"
+          placeholder="Your name.."
+        />
+
+        <label for="lname">Last Name</label>
+        <input
+          type="text"
+          id="lname"
+          name="lastname"
+          placeholder="Your last name.."
+        />
+
+        <label for="email">Email Address</label>
+        <input
+          type="text"
+          id="email"
+          name="emailadd"
+          placeholder="Insert Email.."
+        />
+
+        <label for="subject">Subject</label>
+        <textarea
+          id="subject"
+          name="subject"
+          placeholder="Write something.."
+          style="height: 200px"
+        ></textarea>
+
+        <input type="submit" value="Submit" />
+      </div>
+    </section>
+
+    <!--Adding Javascript JQuery-->
+    <script src="./javascript/jquery.js"></script>
+
+    <!--Adding Java Script-->
+
+    <script src="./javascript/main.js"></script>
+
+    <footer class="footer">
+      <p>&copy; The Food Specialist</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,37 @@
+
+/*----Custom Google Font Abel-----*/
+
+@font-face {
+    font-family: Abel;
+    src:url("../fonts/Abel/Abel-Regular.ttf")
+}
+
+/*----Custom Google Font Anton-----*/
+
+@font-face {
+    font-family: Anton;
+    src:url("../fonts/Anton/Anton-Regular.ttf")
+}
+
+/*----Custom Google Font Josefin-----*/
+
+@font-face {
+    font-family: Josefin;
+    src:url("../fonts/Josefin_Sans/JosefinSans-Regular.ttf")
+}
+
+
+/*----Custom Google Font Lexend-----*/
+
+@font-face {
+    font-family: Lexend;
+    src:url("../fonts/Lexend_Deca/LexendDeca-Regular.ttf")
+}
+
+
+/*----Custom Google Font Livvic-----*/
+@font-face {
+    font-family: Livvic;
+    src:url("../fonts/Livvic/Livvic-Regular.ttf")
+}
+

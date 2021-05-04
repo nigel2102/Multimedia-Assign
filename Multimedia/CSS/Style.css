@@ -1,0 +1,316 @@
+@import url("../CSS/font.css"); /*-------------Importing Font CSS worksheet-------------*/
+
+html,
+body {
+  margin: 0%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+:root {
+  /*-------Font-Family variable Creation-----*/
+
+  --Abel: "Abel", cursive;
+  --Anton: "Anton", cursive;
+  --Josefin: "Josefin", cursive;
+  --Lexend: "Lexend", cursive;
+  --Livvic: "Livvic", cursive;
+
+  /*-------Font color variable Creation-----*/
+
+  --text-gray: #3f4954;
+}
+
+/*-------------------------Global Style------------------------------*/
+
+a {
+  text-decoration: none;
+  color: gray;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; /*------------Making menu... items to be responsive-------------*/
+}
+
+ul {
+  list-style-type: none;
+}
+
+h1 {
+  font-family: var(--Lexend);
+  font-size: 2.5rem;
+}
+
+H2 {
+  font-family: var(--Josefin);
+  font-size: 2rem;
+  border-left: 5px solid #ccc;
+  padding-left: 10px;
+  margin-left: 40px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+h3 {
+  font-family: var(--Abel);
+  font-size: 1.5rem;
+}
+
+/*-------------------------Style CSS for Headers------------------------------*/
+
+.nav {
+  background: white;
+  padding: 0 2rem;
+  height: 0rem;
+  min-height: 10vh;
+  overflow: hidden;
+  transition: height 0.5s ease-in-out; /*------------Transition effect on collapse menu-------------*/
+}
+
+.nav .nav-menu {
+  justify-content: space-between;
+}
+
+.nav .toggle-collapse {
+  /*------------Collapse Menu Style-------------*/
+  position: absolute;
+  top: 0%;
+  width: 90%;
+  cursor: pointer;
+  display: none;
+}
+
+.nav .toggle-collapse .toggle-icons {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1.7rem 0;
+}
+
+.nav .toggle-collapse .toggle-icons i {
+  font-size: 1.4rem;
+  color: grey;
+}
+
+.collapse {
+  /*------------Javascript Collapse Menu-------------*/
+  height: 27rem;
+}
+
+.nav .nav-items {
+  /*-------------Aligning heading menu bar on same line-------------*/
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+}
+
+.nav .nav-items .nav-link {
+  padding: 1.6rem 1rem; /*-------------Spacing between menu items-------------*/
+  font-size: 1.1rem;
+  position: relative;
+  font-family: var(--Lexend);
+}
+
+.nav .nav-items .nav-link:hover {
+  /*-------------Menu Items Backgroun color when hover mouse------------*/
+  background-color: rgb(233, 127, 5);
+}
+
+.nav .nav-items .nav-link:hover a {
+  color: white;
+}
+
+.nav .nav-brand a {
+  font-size: 1.6rem; /*-------------LOGO To be changed-------------*/
+  padding: 1rem 0;
+  display: block;
+  font-family: var(--Abel);
+  font-size: 1.6rem;
+}
+
+.nav .social {
+  padding: 1.4rem 0; /*-------------Adding Padding to Social Media Icons-------------*/
+}
+
+.nav .social i {
+  padding: 0 0.2rem;
+}
+
+.nav .social i:hover {
+  color: rgb(135, 204, 204);
+}
+
+/*-----------------------------Style CSS for Body Contents-----------------------*/
+
+main .site-title {
+  background: url("../FOOD/background.jpg"); /*-------------Style for header background image-------------*/
+  background-size: cover;
+  height: 110vh;
+  display: flex;
+  justify-content: center;
+}
+
+main .site-title .site-background {
+  padding-top: 10rem;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.842);
+}
+
+/* --------------- Website Content ------------ */
+
+main .blog-post {
+  display: flex;
+  justify-content: center;
+}
+
+main .blog-post .blog-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 30%;
+  margin: 3rem 2rem;
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+}
+
+main .blog-content .blog-title {
+  padding: 2rem 0;
+}
+
+main .blog-content .btn-blog {
+  padding: 0.7rem 2rem;
+  background-color: rgba(175, 175, 175, 0.801);
+  border-radius: 12px;
+}
+
+main .featured-title {
+  margin-left: 5px;
+  border-left: 5px solid #ccc;
+}
+
+main .paragraph {
+  margin: 5rem 2rem;
+}
+
+main .paragraph .featured {
+  display: flex;
+}
+
+main .paragraph .featured img {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 300px;
+}
+
+main .paragraph .paragraph-summary {
+  display: flex;
+  padding: 2rem 2rem;
+  font-family: var(--Livvic);
+  text-align: justify;
+}
+
+main .gallery {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  column-count: 2;
+  column-gap: 1px;
+}
+
+main .gallery img {
+  width: 100%;
+  height: auto;
+}
+
+/*------------------Contact Form----------------------------*/
+
+.contact-container {
+  margin: 30px 30px 30px 30px;
+}
+
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type="submit"] {
+  background-color: #04aa6d;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+/*------------------footer Style-----------------------------*/
+
+footer {
+  text-align: center;
+  padding-bottom: 20px;
+  font-family: var(--Livvic);
+}
+
+/*----------------------------Code for Responsive Website-----------------------*/
+
+@media only screen and (max-width: 750px) {
+  .nav .nav-menu,
+  .nav .nav-items {
+    flex-direction: column;
+  }
+
+  .nav .toggle-collapse {
+    display: initial;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  /*-------------Display Collapse when less than 768-------------*/
+  main .blog-post {
+    display: flex;
+    flex-direction: column;
+  }
+
+  main .blog-post .blog-content {
+    width: 91%;
+  }
+
+  main .paragraph .featured {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+  main .paragraph .featured img {
+    width: 100%;
+
+  }
+}
+
+@media screen and (max-width: 620px) {
+  main .blog-post {
+    display: flex;
+    flex-direction: column;
+  }
+
+  main .blog-post .blog-content {
+    width: 85%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  main .paragraph .featured img {
+    width: 500px;
+  }
+}
