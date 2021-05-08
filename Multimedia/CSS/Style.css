@@ -275,7 +275,7 @@ footer {
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1000px) {
   /*-------------Display Collapse when less than 768-------------*/
   main .blog-post {
     display: flex;
